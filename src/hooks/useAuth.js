@@ -4,8 +4,8 @@ import { getAuth } from "firebase/auth";
 const auth = getAuth();
 
 const useAuth = () => {
-  const [user] = useAuthState(auth);
-  return { user };
+  const [user, loading, error] = useAuthState(auth);
+  return { user, loading };
 };
 
 export default useAuth;

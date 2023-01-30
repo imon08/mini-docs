@@ -5,7 +5,7 @@ import useAuth from "../hooks/useAuth";
 
 const Header = () => {
   const { user } = useAuth();
-  console.log(user);
+  console.log(user)
 
   return (
     <div className="w-full h-16 flex justify-between py-4 px-6 border-gray-200 border-b-2 font-semibold">
