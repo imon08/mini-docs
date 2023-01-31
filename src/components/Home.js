@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="flex justify-between p-16 items-center h-screen">
+    <div className="flex justify-between p-16 items-center h-screen mx-20">
       <div className="w-[80%]">
         <p className="text-5xl font-semibold mb-4">Mini Docs</p>
         <p >A lite version of your google drive</p>
-
         <div className="border-black border-2 w-fit mt-5 rounded-md px-7 py-2 bg-blue-900 text-white">
             <Link to="/dashboard"><button>Dashboard</button></Link>
         </div>

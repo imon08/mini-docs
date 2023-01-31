@@ -19,7 +19,13 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-const googleProvider = new GoogleAuthProvider();
+const googleProvider = new GoogleAuthProvider().addScope('https://www.googleapis.com/auth/drive').addScope('https://www.googleapis.com/auth/drive.file')
+.addScope('https://www.googleapis.com/auth/drive.appdata')
+.addScope('https://www.googleapis.com/auth/drive.metadata')
+.addScope('https://www.googleapis.com/auth/drive.readonly')
+.addScope('https://www.googleapis.com/auth/drive.metadata.readonly')
+.addScope('https://www.googleapis.com/auth/drive.apps.readonly')
+.addScope('https://www.googleapis.com/auth/drive.photos.readonly');
 
 const auth = getAuth(app);
 
